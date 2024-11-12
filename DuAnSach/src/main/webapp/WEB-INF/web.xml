@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ChuDeDAO</servlet-name>
+        <servlet-class>dao.ChuDeDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NhaXuatBanDAO</servlet-name>
+        <servlet-class>dao.NhaXuatBanDAO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SachDAO</servlet-name>
+        <servlet-class>dao.SachDAO</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChuDeDAO</servlet-name>
+        <url-pattern>/ChuDeDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NhaXuatBanDAO</servlet-name>
+        <url-pattern>/NhaXuatBanDAO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SachDAO</servlet-name>
+        <url-pattern>/SachDAO</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            home.jsp
+        </welcome-file>
+    </welcome-file-list>
+</web-app>
